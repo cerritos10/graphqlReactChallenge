@@ -1,7 +1,11 @@
 import React from "react";
+import  { useState } from "react";
 import styled from "styled-components";
 import { FiSearch } from "react-icons/fi";
+import Modal from "./Modal";
+
 function Navbar() {
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <NavbarContainer>
       <InputContainer>
@@ -10,9 +14,24 @@ function Navbar() {
         </Icon>
         <Input type="text" placeholder="Search for projects" />
       </InputContainer>
+      <ButtonTask>
+      <button className="openModalBtn" onClick={() => {
+          setModalOpen(true);
+        }}>
+        +
+      </button>
+      </ButtonTask>
+      
+    
+      {modalOpen && <Modal setOpenModal={setModalOpen} />}
     </NavbarContainer>
   );
 }
+
+const ButtonTask = styled.div`
+  padding:10px;
+  margin-top:20px
+`;
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -34,6 +53,7 @@ const NavbarContainer = styled.nav`
 //     margin-top: 1rem;
 //   }
 // `;
+
 const InputContainer = styled.div`
   display: flex;
 `;
