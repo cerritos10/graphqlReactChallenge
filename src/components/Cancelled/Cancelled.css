@@ -1,0 +1,89 @@
+.ProgressCard{
+    height: 100%;
+       width: 17rem;
+       background-color: #222528;
+       padding: 0.2rem;
+       border-radius: 1rem;
+       color: white;
+       transition: 0.4s ease-in-out;
+       margin-bottom:60px;
+        /* &:hover {
+         box-shadow: ${hoverEffect};
+       } */
+       @media screen and (min-width: 320px) and (max-width: 1080px) {
+         width: 80%;
+       } 
+}
+
+.CardContent{
+    margin: 0.4rem;
+    background-color: #2d2f33;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.ProgressText {
+   text-align: left;
+   font-weight: normal;
+   padding: 0px 0;
+}
+
+.IconPoints{
+    float: right;
+    margin-top: -30px;
+}
+
+.PointsText{
+    margin-top: 30px;
+}
+
+.DateText{
+    float: right;
+    background-color: #222528;
+    color: #fff;
+    margin-top: -25px;
+    padding: 3px;
+    border-radius:3px;
+}
+
+.TagsText{
+    margin-top:20px;
+    display:flex;
+    width:90%;
+}
+
+.GreenTags{
+    background-color: #222528;
+    color: #72DD08;
+    padding: 3px;
+    border-radius:3px;
+    width:35%;
+    text-align: center;
+    margin-right:10px;
+}
+
+.YellowTags{
+    background-color: #222528;
+    color: #F8F420;
+    padding: 3px;
+    border-radius:3px;
+    width:35%;
+    text-align: center;
+}
+
+.Footer{
+    margin-top: 2px;
+}
+
+.Avatar{
+    width:50px;
+    height:50px;
+    border-radius:150px;
+    margin-top: 10px;
+}
+
+.Options{
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+}

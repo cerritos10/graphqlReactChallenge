@@ -76,4 +76,13 @@
     
   }
 
+  .menu{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .red-container{
+    background-color: rgba(224, 7, 7, 0.466);
+  }
+
   

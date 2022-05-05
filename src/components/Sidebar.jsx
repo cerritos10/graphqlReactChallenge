@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { RiHomeLine, RiFileCopyLine } from "react-icons/ri";
-import { FaWallet } from "react-icons/fa";
-import { AiOutlinePieChart } from "react-icons/ai";
 import AvatarImage from "../assets/logo.jfif";
+import  "./Modal.css"
+
 function Sidebar() {
   return (
+
     <Container>
       <ProfileContainer>
         <Avatar src={AvatarImage} />
@@ -13,21 +13,17 @@ function Sidebar() {
       <LinksContainer>
         <Links>
           <Link>
-            <RiHomeLine />
-            <h3>Dashboard</h3>
+          <div className="red-container">
+          <a className="menu" href="/"><h3>Dashboard</h3></a>
+          </div>
+           
           </Link>
           <Link>
-            <RiFileCopyLine />
-            <h3>Projects</h3>
+          <div className="red-container">
+          <a className="menu" href="/configuracion"><h3>Configuracion</h3></a>
+          </div>
           </Link>
-          <Link>
-            <FaWallet />
-            <h3>Invoices</h3>
-          </Link>
-          <Link>
-            <AiOutlinePieChart />
-            <h3>Reports</h3>
-          </Link>
+
         </Links>
         {/* <ContactContainer>
           <span>Having troubles?</span>
@@ -105,24 +101,5 @@ const Link = styled.li`
     margin-top: 3%;
   }
 `;
-
-// const ContactContainer = styled.div`
-//   width: 60%;
-//   background-color: #091322;
-//   color: #c4c4c4;
-//   height: 15%;
-//   margin: auto auto;
-//   border-radius: 1rem;
-//   display: flex;
-//   flex-direction: column;
-//   padding: 1rem;
-//   a {
-//     color: white;
-//     text-decoration: none;
-//   }
-//   @media screen and (min-width: 320px) and (max-width: 1080px) {
-//     margin-bottom: 2rem;
-//   }
-// `;
 
 export default Sidebar;
